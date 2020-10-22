@@ -47,3 +47,14 @@ The following packages were updated:
   com.unity.2d.animation from version 3.2.4 to 3.2.5
   com.unity.2d.psdimporter from version 2.1.5 to 2.1.6
   com.unity.2d.spriteshape from version 3.0.13 to 3.0.14
+
+=== Wed Oct 21 19:34:51 2020
+
+Packages were changed.
+Update Mode: mergeDefaultDependencies
+
+The following packages were added:
+  com.unity.cinemachine@2.5.0
+  com.unity.connect.share@1.2.0-preview.1
+  com.unity.learn.iet-framework@0.3.0-preview.5
+  com.unity.postprocessing@2.3.0
