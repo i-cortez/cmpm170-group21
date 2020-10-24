@@ -28,15 +28,16 @@ public class PlayerController : MonoBehaviour
    public bool doublejump;
    public float groundCheckRadius;
    public LayerMask whatIsGround;
-    // Start is called before the first frame update
-    void Start()
-    {
+   
+   // Start is called before the first frame update
+   void Start()
+   {
       theRB = GetComponent<Rigidbody2D>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
+   }
+   
+   // Update is called once per frame
+   void Update()
+   {
       isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, groundCheckRadius, whatIsGround);
       if(isGrounded)
       {
@@ -65,6 +66,12 @@ public class PlayerController : MonoBehaviour
          doublejump = false;
          theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
       }
-    }
+   }
+   
+   private void OnTriggerEnter2D(Collider2D other)
+   {
+      if (other.gameObject.CompareTag("Coins")) Destroy(other.gameObject);
+      if (other.gameObject.CompareTag("Trophy")) Destroy(other.gameObject);
+   }
 }
 

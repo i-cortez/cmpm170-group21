@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Coins
+  - Player 1
+  - Player 2
+  - Trophy
   layers:
   - Default
   - TransparentFX
